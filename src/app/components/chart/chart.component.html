@@ -1,0 +1,29 @@
+<p>
+  chart works!
+</p>
+<h1>Charts Demo</h1> <br>
+<p>
+    <button type="button" class="btn btn-lg btn-default">Default</button>
+    <button type="button" class="btn btn-lg btn-primary">Primary</button>
+    <button type="button" class="btn btn-lg btn-success">Success</button>
+    <button type="button" class="btn btn-lg btn-info">Info</button>
+    <button type="button" class="btn btn-lg btn-warning">Warning</button>
+    <button type="button" class="btn btn-lg btn-danger">Danger</button>
+    <button type="button" class="btn btn-lg btn-link">Link</button>
+  </p>
+<div style="height: 100px">
+  <ngx-charts-bar-vertical
+   [view]="view"
+   [scheme]="colorScheme"
+   [results]="single"
+   [gradient]="gradient"
+   [xAxis]="showXAxis"
+   [yAxis]="showYAxis"
+   [legend]="showLegend"
+   [showXAxisLabel]="showXAxisLabel"
+   [showYAxisLabel]="showYAxisLabel"
+   [xAxisLabel]="xAxisLabel"
+   [yAxisLabel]="yAxisLabel"
+   (select)="onSelect($event)">
+ </ngx-charts-bar-vertical>
+</div>

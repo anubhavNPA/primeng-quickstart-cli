@@ -1,0 +1,8 @@
+<h1>Some Component</h1>
+<h2>{{responseString}}</h2>
+<p-dataTable [value]="agentList" selectionMode="single" [(selection)]="selectedAgent" (onRowSelect)="onRowSelect($event)" [paginator]="true" [rows]="10" [responsive]="true">
+      <p-header>CRUD for Agents</p-header>
+      <p-column field="name" header="name" [sortable]="true"></p-column>
+      <p-column field="city" header="city" [sortable]="true"></p-column>
+      <p-footer><div class="ui-helper-clearfix" style="width:100%"><button type="button" pButton icon="fa-plus" style="float:left" (click)="showDialogToAdd()" label="Add"></button></div></p-footer>
+</p-dataTable>
